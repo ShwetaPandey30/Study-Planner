@@ -1,0 +1,341 @@
+.planner-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 28px;
+  color: #1e293b;
+}
+
+.planner-header {
+  margin-bottom: 24px;
+}
+
+.planner-header h1 {
+  margin-bottom: 8px;
+  font-size: 30px;
+}
+
+.planner-header p {
+  color: #64748b;
+}
+
+.planner-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.05);
+}
+
+.planner-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.planner-field label {
+  font-weight: 600;
+}
+
+.planner-field input,
+.planner-field select {
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font: inherit;
+  background: #ffffff;
+}
+
+.planner-field small {
+  color: #64748b;
+}
+
+.generate-button,
+.secondary-button {
+  min-height: 44px;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 9px;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.generate-button {
+  grid-column: 1 / -1;
+  color: white;
+  background: #2563eb;
+}
+
+.generate-button:hover {
+  background: #1d4ed8;
+}
+
+.generate-button:disabled {
+  opacity: 0.65;
+  cursor: wait;
+}
+
+.planner-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 18px 0;
+}
+
+.secondary-button {
+  color: #1d4ed8;
+  background: #dbeafe;
+}
+
+.planner-error {
+  margin: 16px 0;
+  padding: 14px;
+  color: #991b1b;
+  background: #fee2e2;
+  border-radius: 8px;
+}
+
+.generated-plan {
+  margin-top: 28px;
+}
+
+.generated-plan > h2 {
+  margin-bottom: 8px;
+}
+
+.day-card {
+  margin: 20px 0;
+  padding: 18px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+}
+
+.day-card h3 {
+  margin-top: 0;
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.planner-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.planner-table th,
+.planner-table td {
+  padding: 12px;
+  border-bottom: 1px solid #e2e8f0;
+  vertical-align: top;
+}
+
+.planner-table th {
+  background: #eff6ff;
+}
+
+.study-tips {
+  margin-top: 24px;
+  padding: 20px;
+  background: #f0fdf4;
+  border-radius: 12px;
+}
+
+.study-tips li {
+  margin: 8px 0;
+}
+
+@media (max-width: 700px) {
+  .planner-page {
+    padding: 16px;
+  }
+
+  .planner-form {
+    grid-template-columns: 1fr;
+    padding: 16px;
+  }
+
+  .generate-button {
+    grid-column: auto;
+  }
+
+  .planner-header h1 {
+    font-size: 24px;
+  }
+}
+
+
+.planner-page {
+  max-width: 1100px;
+  margin: auto;
+  padding: 28px;
+  color: #172033;
+}
+
+.planner-header h1 {
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.planner-header p {
+  color: #64748b;
+  margin-bottom: 25px;
+}
+
+.planner-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  padding: 25px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(15, 23, 42, 0.05);
+}
+
+.planner-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.planner-field label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.planner-field input,
+.planner-field select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 14px;
+}
+
+.planner-field input:focus,
+.planner-field select:focus {
+  outline: 2px solid #bfdbfe;
+  border-color: #2563eb;
+}
+
+.planner-field small {
+  color: #64748b;
+}
+
+.generate-button {
+  grid-column: 1 / -1;
+  padding: 13px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.generate-button:hover {
+  background: #1d4ed8;
+}
+
+.generate-button:disabled {
+  opacity: 0.65;
+  cursor: wait;
+}
+
+.planner-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 18px 0;
+}
+
+.secondary-button {
+  padding: 11px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #dbeafe;
+  color: #1d4ed8;
+  cursor: pointer;
+}
+
+.planner-error {
+  padding: 12px;
+  border-radius: 8px;
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.generated-plan {
+  margin-top: 28px;
+}
+
+.day-card {
+  margin: 18px 0;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+}
+
+.day-card h3 {
+  color: #2563eb;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.planner-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.planner-table th,
+.planner-table td {
+  padding: 12px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.planner-table th {
+  background: #eff6ff;
+  color: #1d4ed8;
+}
+
+.study-tips {
+  padding: 18px;
+  border-radius: 12px;
+  background: #f0fdf4;
+}
+
+@media (max-width: 650px) {
+  .planner-page {
+    padding: 16px;
+  }
+
+  .planner-form {
+    grid-template-columns: 1fr;
+    padding: 18px;
+  }
+
+  .generate-button {
+    grid-column: auto;
+  }
+}
+
+
+
+

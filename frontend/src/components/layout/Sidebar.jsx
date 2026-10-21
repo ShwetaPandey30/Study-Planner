@@ -5,6 +5,7 @@ import {
   FaFilePdf,
   FaCog,
   FaTimes,
+  FaCalendarAlt,
 } from "react-icons/fa";
 
 function Sidebar({ isOpen, onClose }) {
@@ -49,6 +50,17 @@ function Sidebar({ isOpen, onClose }) {
         >
           <FaFilePdf />
           <span>PDF Assistant</span>
+        </NavLink>
+
+        <NavLink
+          to="/study-planner"
+          className={({ isActive }) =>
+            isActive ? "nav-item active" : "nav-item"
+          }
+          onClick={onClose}
+        >
+          <FaCalendarAlt />
+          <span>AI Study Planner</span>
         </NavLink>
 
         <NavLink

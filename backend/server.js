@@ -3,6 +3,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 import chatRoutes from "./routes/chatRoutes.js";
 import pdfRoutes from "./routes/pdfRoutes.js";
+import plannerRoutes from "./routes/plannerRoutes.js";
 
 dotenv.config();
 
@@ -13,6 +14,7 @@ app.use(express.json({ limit: "50mb" }));
 app.use(express.urlencoded({ limit: "50mb", extended: true }));
 app.use("/api/chat", chatRoutes);
 app.use("/api/pdf", pdfRoutes);
+app.use("/api/planner", plannerRoutes);
 
 app.get("/", (req, res) => {
   res.json({
